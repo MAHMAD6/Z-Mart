@@ -1,0 +1,119 @@
+C:\Users\dell\source\repos\Z Mart\bin\Debug\Z Mart.exe.config
+C:\Users\dell\source\repos\Z Mart\bin\Debug\Z Mart.exe
+C:\Users\dell\source\repos\Z Mart\bin\Debug\Z Mart.pdb
+C:\Users\dell\source\repos\Z Mart\bin\Debug\Bunifu.UI.WinForm.BunifuShadowPanel.dll
+C:\Users\dell\source\repos\Z Mart\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
+C:\Users\dell\source\repos\Z Mart\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.dll
+C:\Users\dell\source\repos\Z Mart\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll
+C:\Users\dell\source\repos\Z Mart\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.dll
+C:\Users\dell\source\repos\Z Mart\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\dell\source\repos\Z Mart\bin\Debug\Guna.UI2.dll
+C:\Users\dell\source\repos\Z Mart\bin\Debug\Bunifu.UI.WinForm.BunifuShadowPanel.xml
+C:\Users\dell\source\repos\Z Mart\bin\Debug\Bunifu.UI.WinForms.BunifuButton.xml
+C:\Users\dell\source\repos\Z Mart\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.xml
+C:\Users\dell\source\repos\Z Mart\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.xml
+C:\Users\dell\source\repos\Z Mart\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.xml
+C:\Users\dell\source\repos\Z Mart\bin\Debug\Bunifu_UI_v1.5.3.xml
+C:\Users\dell\source\repos\Z Mart\obj\Debug\Z_Mart.csproj.AssemblyReference.cache
+C:\Users\dell\source\repos\Z Mart\obj\Debug\Z_Mart.csproj.SuggestedBindingRedirects.cache
+C:\Users\dell\source\repos\Z Mart\obj\Debug\Z Mart.exe.config
+C:\Users\dell\source\repos\Z Mart\obj\Debug\Z_Mart.Loading.resources
+C:\Users\dell\source\repos\Z Mart\obj\Debug\Z_Mart.Forms.Notification.resources
+C:\Users\dell\source\repos\Z Mart\obj\Debug\Z_Mart.LoginPage.resources
+C:\Users\dell\source\repos\Z Mart\obj\Debug\Z_Mart.Properties.Resources.resources
+C:\Users\dell\source\repos\Z Mart\obj\Debug\Z_Mart.csproj.GenerateResource.cache
+C:\Users\dell\source\repos\Z Mart\obj\Debug\Z_Mart.csproj.CoreCompileInputs.cache
+C:\Users\dell\source\repos\Z Mart\obj\Debug\Z_Mart.csproj.CopyComplete
+C:\Users\dell\source\repos\Z Mart\obj\Debug\Z Mart.exe
+C:\Users\dell\source\repos\Z Mart\obj\Debug\Z Mart.pdb
+C:\Users\dell\source\repos\Z Mart\obj\Debug\Z_Mart.Forms.AdminMainMenu.resources
+C:\Users\dell\source\repos\Z Mart\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.dll
+C:\Users\dell\source\repos\Z Mart\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.xml
+C:\Users\dell\source\repos\Z Mart\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
+C:\Users\dell\source\repos\Z Mart\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.xml
+C:\Users\dell\source\repos\Z Mart\obj\Debug\Z_Mart.UC.UC_ManageItems.resources
+C:\Users\dell\source\repos\Z Mart\obj\Debug\Z_Mart.UC.Uc_AddItem.resources
+C:\Users\dell\source\repos\Z Mart\obj\Debug\Z_Mart.UC.UC_Item.resources
+C:\Users\dell\source\repos\Z Mart\obj\Debug\Z_Mart.UC.UC_ViewItems.resources
+C:\Users\dell\source\repos\Z Mart\obj\Debug\Z_Mart.UC.UC_UpdateItem.resources
+C:\Users\dell\source\repos\Z Mart\obj\Debug\Z_Mart.UC.UC_UpdateAdminMenu.resources
+C:\Users\dell\source\repos\Z Mart\obj\Debug\Z_Mart.UC.UC_Home.resources
+C:\Users\dell\source\repos\Z Mart\obj\Debug\Z_Mart.UC.UC_DeleteItem.resources
+C:\Users\dell\source\repos\Z Mart\obj\Debug\Z_Mart.UC.Uc_ItemSearch.resources
+C:\Users\dell\source\repos\Z Mart\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.dll
+C:\Users\dell\source\repos\Z Mart\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.xml
+C:\Users\dell\source\repos\Z Mart\obj\Debug\Z_Mart.UC.UC_AddAdmin.resources
+C:\Users\dell\source\repos\Z Mart\obj\Debug\Z_Mart.UC.Uc_Admin.resources
+C:\Users\dell\source\repos\Z Mart\obj\Debug\Z_Mart.UC.Uc_ManageAdmins.resources
+C:\Users\dell\source\repos\Z Mart\obj\Debug\Z_Mart.UC.Uc_ViewAdmin.resources
+C:\Users\dell\source\repos\Z Mart\obj\Debug\Z_Mart.UC.uc_SearchAdmin.resources
+C:\Users\dell\source\repos\Z Mart\obj\Debug\Z_Mart.UC.uc_DeleteAdmin.resources
+C:\Users\dell\source\repos\Z Mart\obj\Debug\Z_Mart.UC.uc_updateAdmin.resources
+C:\Users\dell\source\repos\Z Mart\obj\Debug\Z_Mart.UC.uc_Customer.resources
+C:\Users\dell\source\repos\Z Mart\obj\Debug\Z_Mart.UC.uc_DeleteCustomer.resources
+C:\Users\dell\source\repos\Z Mart\obj\Debug\Z_Mart.UC.uc_ManageCustomers.resources
+C:\Users\dell\source\repos\Z Mart\obj\Debug\Z_Mart.Forms.CustomerMainMenu.resources
+C:\Users\dell\source\repos\Z Mart\obj\Debug\Z_Mart.SignUpPage.resources
+C:\Users\dell\source\repos\Z Mart\obj\Debug\Z_Mart.UC.uc_ViewCustomers.resources
+C:\Users\dell\source\repos\Z Mart\obj\Debug\Z_Mart.UC.uc_Cart.resources
+C:\Users\dell\source\repos\Z Mart\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.dll
+C:\Users\dell\source\repos\Z Mart\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.xml
+C:\Users\dell\source\repos\Z Mart\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.dll
+C:\Users\dell\source\repos\Z Mart\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.xml
+C:\Users\dell\source\repos\Z Mart\obj\Debug\Z_Mart.UC.CustomerProfile.resources
+C:\Users\dell\source\repos\Z Mart\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.dll
+C:\Users\dell\source\repos\Z Mart\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.xml
+C:\Users\dell\source\repos\Z Mart\obj\Debug\Z_Mart.UC.AdminProfile.resources
+C:\Users\cheeeesee\Desktop\Z-Mart\obj\Debug\Z_Mart.csproj.AssemblyReference.cache
+C:\Users\cheeeesee\Desktop\Z-Mart\obj\Debug\Z_Mart.csproj.SuggestedBindingRedirects.cache
+C:\Users\cheeeesee\Desktop\Z-Mart\obj\Debug\Z Mart.exe.config
+C:\Users\cheeeesee\Desktop\Z-Mart\obj\Debug\Z_Mart.Loading.resources
+C:\Users\cheeeesee\Desktop\Z-Mart\obj\Debug\Z_Mart.Forms.AdminMainMenu.resources
+C:\Users\cheeeesee\Desktop\Z-Mart\obj\Debug\Z_Mart.Forms.CustomerMainMenu.resources
+C:\Users\cheeeesee\Desktop\Z-Mart\obj\Debug\Z_Mart.Forms.Notification.resources
+C:\Users\cheeeesee\Desktop\Z-Mart\obj\Debug\Z_Mart.LoginPage.resources
+C:\Users\cheeeesee\Desktop\Z-Mart\obj\Debug\Z_Mart.Properties.Resources.resources
+C:\Users\cheeeesee\Desktop\Z-Mart\obj\Debug\Z_Mart.SignUpPage.resources
+C:\Users\cheeeesee\Desktop\Z-Mart\obj\Debug\Z_Mart.UC.AdminProfile.resources
+C:\Users\cheeeesee\Desktop\Z-Mart\obj\Debug\Z_Mart.UC.CustomerProfile.resources
+C:\Users\cheeeesee\Desktop\Z-Mart\obj\Debug\Z_Mart.UC.UC_AddAdmin.resources
+C:\Users\cheeeesee\Desktop\Z-Mart\obj\Debug\Z_Mart.UC.Uc_AddItem.resources
+C:\Users\cheeeesee\Desktop\Z-Mart\obj\Debug\Z_Mart.UC.Uc_Admin.resources
+C:\Users\cheeeesee\Desktop\Z-Mart\obj\Debug\Z_Mart.UC.uc_Cart.resources
+C:\Users\cheeeesee\Desktop\Z-Mart\obj\Debug\Z_Mart.UC.uc_Customer.resources
+C:\Users\cheeeesee\Desktop\Z-Mart\obj\Debug\Z_Mart.UC.uc_DeleteAdmin.resources
+C:\Users\cheeeesee\Desktop\Z-Mart\obj\Debug\Z_Mart.UC.uc_DeleteCustomer.resources
+C:\Users\cheeeesee\Desktop\Z-Mart\obj\Debug\Z_Mart.UC.UC_DeleteItem.resources
+C:\Users\cheeeesee\Desktop\Z-Mart\obj\Debug\Z_Mart.UC.UC_Home.resources
+C:\Users\cheeeesee\Desktop\Z-Mart\obj\Debug\Z_Mart.UC.UC_Item.resources
+C:\Users\cheeeesee\Desktop\Z-Mart\obj\Debug\Z_Mart.UC.Uc_ItemSearch.resources
+C:\Users\cheeeesee\Desktop\Z-Mart\obj\Debug\Z_Mart.UC.Uc_ManageAdmins.resources
+C:\Users\cheeeesee\Desktop\Z-Mart\obj\Debug\Z_Mart.UC.uc_ManageCustomers.resources
+C:\Users\cheeeesee\Desktop\Z-Mart\obj\Debug\Z_Mart.UC.UC_ManageItems.resources
+C:\Users\cheeeesee\Desktop\Z-Mart\obj\Debug\Z_Mart.UC.uc_SearchAdmin.resources
+C:\Users\cheeeesee\Desktop\Z-Mart\obj\Debug\Z_Mart.UC.uc_updateAdmin.resources
+C:\Users\cheeeesee\Desktop\Z-Mart\obj\Debug\Z_Mart.UC.UC_UpdateAdminMenu.resources
+C:\Users\cheeeesee\Desktop\Z-Mart\obj\Debug\Z_Mart.UC.UC_UpdateItem.resources
+C:\Users\cheeeesee\Desktop\Z-Mart\obj\Debug\Z_Mart.UC.Uc_ViewAdmin.resources
+C:\Users\cheeeesee\Desktop\Z-Mart\obj\Debug\Z_Mart.UC.uc_ViewCustomers.resources
+C:\Users\cheeeesee\Desktop\Z-Mart\obj\Debug\Z_Mart.UC.UC_ViewItems.resources
+C:\Users\cheeeesee\Desktop\Z-Mart\obj\Debug\Z_Mart.csproj.GenerateResource.cache
+C:\Users\cheeeesee\Desktop\Z-Mart\obj\Debug\Z_Mart.csproj.CoreCompileInputs.cache
+C:\Users\cheeeesee\Desktop\Z-Mart\obj\Debug\Z Mart.exe
+C:\Users\cheeeesee\Desktop\Z-Mart\obj\Debug\Z Mart.pdb
+C:\Users\cheeeesee\Desktop\Z-Mart\bin\Debug\Z Mart.exe.config
+C:\Users\cheeeesee\Desktop\Z-Mart\bin\Debug\Z Mart.exe
+C:\Users\cheeeesee\Desktop\Z-Mart\bin\Debug\Z Mart.pdb
+C:\Users\cheeeesee\Desktop\Z-Mart\bin\Debug\Bunifu.UI.WinForm.BunifuShadowPanel.xml
+C:\Users\cheeeesee\Desktop\Z-Mart\bin\Debug\Bunifu.UI.WinForms.BunifuButton.xml
+C:\Users\cheeeesee\Desktop\Z-Mart\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.xml
+C:\Users\cheeeesee\Desktop\Z-Mart\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.xml
+C:\Users\cheeeesee\Desktop\Z-Mart\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.xml
+C:\Users\cheeeesee\Desktop\Z-Mart\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.xml
+C:\Users\cheeeesee\Desktop\Z-Mart\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.xml
+C:\Users\cheeeesee\Desktop\Z-Mart\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.xml
+C:\Users\cheeeesee\Desktop\Z-Mart\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.xml
+C:\Users\cheeeesee\Desktop\Z-Mart\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.xml
+C:\Users\cheeeesee\Desktop\Z-Mart\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.xml
+C:\Users\cheeeesee\Desktop\Z-Mart\bin\Debug\Bunifu_UI_v1.5.3.xml
+C:\Users\cheeeesee\Desktop\Z-Mart\obj\Debug\Z_Mart.csproj.Up2Date

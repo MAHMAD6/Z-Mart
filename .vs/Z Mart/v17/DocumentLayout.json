@@ -1,0 +1,159 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\cheeeesee\\Desktop\\Z-Mart\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8F5E8C62-1E0D-4058-B8A9-2749FA782CD0}|Z_Mart.csproj|c:\\users\\cheeeesee\\desktop\\z-mart\\ui\\forms\\loading.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F5E8C62-1E0D-4058-B8A9-2749FA782CD0}|Z_Mart.csproj|solutionrelative:ui\\forms\\loading.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F5E8C62-1E0D-4058-B8A9-2749FA782CD0}|Z_Mart.csproj|c:\\users\\cheeeesee\\desktop\\z-mart\\dl\\essentials.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F5E8C62-1E0D-4058-B8A9-2749FA782CD0}|Z_Mart.csproj|solutionrelative:dl\\essentials.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F5E8C62-1E0D-4058-B8A9-2749FA782CD0}|Z_Mart.csproj|c:\\users\\cheeeesee\\desktop\\z-mart\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F5E8C62-1E0D-4058-B8A9-2749FA782CD0}|Z_Mart.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F5E8C62-1E0D-4058-B8A9-2749FA782CD0}|Z_Mart.csproj|c:\\users\\cheeeesee\\desktop\\z-mart\\ui\\forms\\loading.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8F5E8C62-1E0D-4058-B8A9-2749FA782CD0}|Z_Mart.csproj|solutionrelative:ui\\forms\\loading.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F5E8C62-1E0D-4058-B8A9-2749FA782CD0}|Z_Mart.csproj|c:\\users\\cheeeesee\\desktop\\z-mart\\dl\\itemcrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F5E8C62-1E0D-4058-B8A9-2749FA782CD0}|Z_Mart.csproj|solutionrelative:dl\\itemcrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F5E8C62-1E0D-4058-B8A9-2749FA782CD0}|Z_Mart.csproj|c:\\users\\cheeeesee\\desktop\\z-mart\\dl\\app.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F5E8C62-1E0D-4058-B8A9-2749FA782CD0}|Z_Mart.csproj|solutionrelative:dl\\app.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F5E8C62-1E0D-4058-B8A9-2749FA782CD0}|Z_Mart.csproj|c:\\users\\cheeeesee\\desktop\\z-mart\\dl\\appexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F5E8C62-1E0D-4058-B8A9-2749FA782CD0}|Z_Mart.csproj|solutionrelative:dl\\appexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F5E8C62-1E0D-4058-B8A9-2749FA782CD0}|Z_Mart.csproj|c:\\users\\cheeeesee\\desktop\\z-mart\\dl\\colores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F5E8C62-1E0D-4058-B8A9-2749FA782CD0}|Z_Mart.csproj|solutionrelative:dl\\colores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ItemCRUD.cs",
+              "DocumentMoniker": "C:\\Users\\cheeeesee\\Desktop\\Z-Mart\\DL\\ItemCRUD.cs",
+              "RelativeDocumentMoniker": "DL\\ItemCRUD.cs",
+              "ToolTip": "C:\\Users\\cheeeesee\\Desktop\\Z-Mart\\DL\\ItemCRUD.cs",
+              "RelativeToolTip": "DL\\ItemCRUD.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T17:22:20.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "App.cs",
+              "DocumentMoniker": "C:\\Users\\cheeeesee\\Desktop\\Z-Mart\\DL\\App.cs",
+              "RelativeDocumentMoniker": "DL\\App.cs",
+              "ToolTip": "C:\\Users\\cheeeesee\\Desktop\\Z-Mart\\DL\\App.cs",
+              "RelativeToolTip": "DL\\App.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T17:17:55.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AppException.cs",
+              "DocumentMoniker": "C:\\Users\\cheeeesee\\Desktop\\Z-Mart\\DL\\AppException.cs",
+              "RelativeDocumentMoniker": "DL\\AppException.cs",
+              "ToolTip": "C:\\Users\\cheeeesee\\Desktop\\Z-Mart\\DL\\AppException.cs",
+              "RelativeToolTip": "DL\\AppException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T17:11:53.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Essentials.cs",
+              "DocumentMoniker": "C:\\Users\\cheeeesee\\Desktop\\Z-Mart\\DL\\Essentials.cs",
+              "RelativeDocumentMoniker": "DL\\Essentials.cs",
+              "ToolTip": "C:\\Users\\cheeeesee\\Desktop\\Z-Mart\\DL\\Essentials.cs",
+              "RelativeToolTip": "DL\\Essentials.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAUwDgAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T17:08:19.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Loading.cs",
+              "DocumentMoniker": "C:\\Users\\cheeeesee\\Desktop\\Z-Mart\\UI\\Forms\\Loading.cs",
+              "RelativeDocumentMoniker": "UI\\Forms\\Loading.cs",
+              "ToolTip": "C:\\Users\\cheeeesee\\Desktop\\Z-Mart\\UI\\Forms\\Loading.cs",
+              "RelativeToolTip": "UI\\Forms\\Loading.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAIwBQAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T17:07:55.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Loading.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\cheeeesee\\Desktop\\Z-Mart\\UI\\Forms\\Loading.cs",
+              "RelativeDocumentMoniker": "UI\\Forms\\Loading.cs",
+              "ToolTip": "C:\\Users\\cheeeesee\\Desktop\\Z-Mart\\UI\\Forms\\Loading.cs [Design]",
+              "RelativeToolTip": "UI\\Forms\\Loading.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T17:07:40.463Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Colores.cs",
+              "DocumentMoniker": "C:\\Users\\cheeeesee\\Desktop\\Z-Mart\\DL\\Colores.cs",
+              "RelativeDocumentMoniker": "DL\\Colores.cs",
+              "ToolTip": "C:\\Users\\cheeeesee\\Desktop\\Z-Mart\\DL\\Colores.cs",
+              "RelativeToolTip": "DL\\Colores.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T17:07:10.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\cheeeesee\\Desktop\\Z-Mart\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\cheeeesee\\Desktop\\Z-Mart\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBcAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T17:06:48.813Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

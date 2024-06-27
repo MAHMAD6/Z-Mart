@@ -1,0 +1,773 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8F5E8C62-1E0D-4058-B8A9-2749FA782CD0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Z_Mart</RootNamespace>
+    <AssemblyName>Z Mart</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.Core, Version=1.11.5.1, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9" />
+    <Reference Include="Bunifu.UI.WinForm.BunifuShadowPanel">
+      <HintPath>D:\Downloads\phrmacy man\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForm.BunifuShadowPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuButton">
+      <HintPath>D:\Downloads\phrmacy man\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuCheckBox">
+      <HintPath>D:\Downloads\phrmacy man\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuCheckBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuCircleProgress">
+      <HintPath>D:\Downloads\phrmacy man\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuCircleProgress.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
+      <HintPath>D:\Downloads\phrmacy man\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuFormDock">
+      <HintPath>D:\Downloads\phrmacy man\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuFormDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuImageButton">
+      <HintPath>D:\Downloads\phrmacy man\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuImageButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuLabel">
+      <HintPath>D:\Downloads\phrmacy man\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPictureBox">
+      <HintPath>D:\Downloads\phrmacy man\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuProgressBar">
+      <HintPath>D:\Downloads\phrmacy man\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
+      <HintPath>D:\Downloads\phrmacy man\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>D:\Downloads\phrmacy man\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>D:\Downloads\phrmacy man\PcWonderland.com_Guna_UI_Framework_Ultimate_2\Guna UI Framework Ultimate v2.0.0.1 Lib-Master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BL\Admin.cs" />
+    <Compile Include="BL\Customer.cs" />
+    <Compile Include="BL\Item.cs" />
+    <Compile Include="BL\Person.cs" />
+    <Compile Include="DL\AdminCRUD.cs" />
+    <Compile Include="DL\App.cs" />
+    <Compile Include="DL\AppException.cs" />
+    <Compile Include="DL\Colores.cs" />
+    <Compile Include="DL\CustomerCRUD.cs" />
+    <Compile Include="DL\Essentials.cs" />
+    <Compile Include="DL\ItemCRUD.cs" />
+    <Compile Include="DL\PersonCRUD.cs" />
+    <Compile Include="UI\Forms\Loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\Loading.Designer.cs">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\AdminMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\AdminMainMenu.Designer.cs">
+      <DependentUpon>AdminMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\CustomerMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\CustomerMainMenu.Designer.cs">
+      <DependentUpon>CustomerMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\Notification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\Notification.Designer.cs">
+      <DependentUpon>Notification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\LoginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\LoginPage.Designer.cs">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\Forms\SignUpPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\SignUpPage.Designer.cs">
+      <DependentUpon>SignUpPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UC\AdminProfile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UC\AdminProfile.Designer.cs">
+      <DependentUpon>AdminProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UC\CustomerProfile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UC\CustomerProfile.Designer.cs">
+      <DependentUpon>CustomerProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UC\UC_AddAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UC\UC_AddAdmin.Designer.cs">
+      <DependentUpon>UC_AddAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UC\Uc_AddItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UC\Uc_AddItem.Designer.cs">
+      <DependentUpon>Uc_AddItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UC\Uc_Admin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UC\Uc_Admin.Designer.cs">
+      <DependentUpon>Uc_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UC\uc_Cart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UC\uc_Cart.Designer.cs">
+      <DependentUpon>uc_Cart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UC\uc_Customer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UC\uc_Customer.Designer.cs">
+      <DependentUpon>uc_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UC\uc_DeleteAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UC\uc_DeleteAdmin.Designer.cs">
+      <DependentUpon>uc_DeleteAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UC\uc_DeleteCustomer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UC\uc_DeleteCustomer.Designer.cs">
+      <DependentUpon>uc_DeleteCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UC\UC_DeleteItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UC\UC_DeleteItem.Designer.cs">
+      <DependentUpon>UC_DeleteItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UC\UC_Home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UC\UC_Home.designer.cs">
+      <DependentUpon>UC_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UC\UC_Item.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UC\UC_Item.Designer.cs">
+      <DependentUpon>UC_Item.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UC\Uc_ItemSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UC\Uc_ItemSearch.Designer.cs">
+      <DependentUpon>Uc_ItemSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UC\Uc_ManageAdmins.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UC\Uc_ManageAdmins.Designer.cs">
+      <DependentUpon>Uc_ManageAdmins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UC\uc_ManageCustomers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UC\uc_ManageCustomers.Designer.cs">
+      <DependentUpon>uc_ManageCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UC\UC_ManageItems.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UC\UC_ManageItems.Designer.cs">
+      <DependentUpon>UC_ManageItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UC\uc_SearchAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UC\uc_SearchAdmin.Designer.cs">
+      <DependentUpon>uc_SearchAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UC\uc_updateAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UC\uc_updateAdmin.Designer.cs">
+      <DependentUpon>uc_updateAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UC\UC_UpdateAdminMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UC\UC_UpdateAdminMenu.Designer.cs">
+      <DependentUpon>UC_UpdateAdminMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UC\UC_UpdateItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UC\UC_UpdateItem.Designer.cs">
+      <DependentUpon>UC_UpdateItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UC\Uc_ViewAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UC\Uc_ViewAdmin.Designer.cs">
+      <DependentUpon>Uc_ViewAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UC\uc_ViewCustomers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UC\uc_ViewCustomers.Designer.cs">
+      <DependentUpon>uc_ViewCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UC\UC_ViewItems.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UC\UC_ViewItems.Designer.cs">
+      <DependentUpon>UC_ViewItems.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UI\Forms\Loading.resx">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\AdminMainMenu.resx">
+      <DependentUpon>AdminMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\CustomerMainMenu.resx">
+      <DependentUpon>CustomerMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\Notification.resx">
+      <DependentUpon>Notification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\LoginPage.resx">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UI\Forms\SignUpPage.resx">
+      <DependentUpon>SignUpPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UC\AdminProfile.resx">
+      <DependentUpon>AdminProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UC\CustomerProfile.resx">
+      <DependentUpon>CustomerProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UC\UC_AddAdmin.resx">
+      <DependentUpon>UC_AddAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UC\Uc_AddItem.resx">
+      <DependentUpon>Uc_AddItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UC\Uc_Admin.resx">
+      <DependentUpon>Uc_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UC\uc_Cart.resx">
+      <DependentUpon>uc_Cart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UC\uc_Customer.resx">
+      <DependentUpon>uc_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UC\uc_DeleteAdmin.resx">
+      <DependentUpon>uc_DeleteAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UC\uc_DeleteCustomer.resx">
+      <DependentUpon>uc_DeleteCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UC\UC_DeleteItem.resx">
+      <DependentUpon>UC_DeleteItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UC\UC_Home.resx">
+      <DependentUpon>UC_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UC\UC_Item.resx">
+      <DependentUpon>UC_Item.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UC\Uc_ItemSearch.resx">
+      <DependentUpon>Uc_ItemSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UC\Uc_ManageAdmins.resx">
+      <DependentUpon>Uc_ManageAdmins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UC\uc_ManageCustomers.resx">
+      <DependentUpon>uc_ManageCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UC\UC_ManageItems.resx">
+      <DependentUpon>UC_ManageItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UC\uc_SearchAdmin.resx">
+      <DependentUpon>uc_SearchAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UC\uc_updateAdmin.resx">
+      <DependentUpon>uc_updateAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UC\UC_UpdateAdminMenu.resx">
+      <DependentUpon>UC_UpdateAdminMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UC\UC_UpdateItem.resx">
+      <DependentUpon>UC_UpdateItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UC\Uc_ViewAdmin.resx">
+      <DependentUpon>Uc_ViewAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UC\uc_ViewCustomers.resx">
+      <DependentUpon>uc_ViewCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UC\UC_ViewItems.resx">
+      <DependentUpon>UC_ViewItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\App_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Only_App_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Error_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userProfilHolder_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Items_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Customers_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Admin_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Only_APP_Icon_White.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userProfileHolder_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Setting_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\View Items Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_Icon_Big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Update_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddItem_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddPhoto_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DoubleTick_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Package_2d_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trolley_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sale_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\market_Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\computer_Gif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stock_Gif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apple_png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin_icon_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin_profile_pic_holder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_icon_big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_mini_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cart_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Second_square_banner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\first_square_banner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add_Item_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\View_Items.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update_item.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_Item.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_settings_52px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_user_male_circle_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ADD_Gif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add_png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_Gif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search_Gif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search_png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Update_Gif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update_png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UPDATE_GIF_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UPDATE_GIF_ORG_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UPDATE_PNG_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ADD_PNG_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_search_52px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_search_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddPhoto_Icon_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_user_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_lock_2_filled_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_lock_52px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_invisible_60px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_visible_60px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_invisible_60px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\debut.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gfkhjfhg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HIde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_delete_sign_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\feedbck_gif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Remove_Customer_Png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\feedbck_ong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\View_Customers.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Remove_Customer.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\View_Customer_PNg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wired-flat-245-edit-document.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wrench_white_gif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gift_gif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\management _gif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error_gif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\qrCode_gif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star_gif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sparks_gif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signup_img.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\confirmation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_change_user_male_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_edit_52px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_edit_52px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_change_user_female_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_change_user_male_64px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Us_Dollar_Circled_48px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_sales_performance_30px.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
