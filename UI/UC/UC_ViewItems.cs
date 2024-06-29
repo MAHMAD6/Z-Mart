@@ -27,7 +27,7 @@ namespace Z_Mart.UC
         public void viewItems(bool admin)
         {
             flowLayoutPanel1.Controls.Clear();
-            foreach(var item in ItemCRUD.List)
+            foreach(var item in ItemCRUD.ItemList)
             {
                 UC_Item UcItem = new UC_Item(item.Name,(item.Price).ToString(),(item.Quantity).ToString(),item.image, admin,true);
                 flowLayoutPanel1.Controls.Add(UcItem);

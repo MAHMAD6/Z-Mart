@@ -331,10 +331,14 @@ namespace Z_Mart.UC
                 item.image = orgImg;
 
             }
+            string itemToUpdate = item.Name;
             if (!NameError)
             {
                 if (isCheckedName)
+                {
+
                     item.Name = tb_enter_ItemName_2.Text;
+                }
                 else
                     item.Name = orgName;
                 this.Visible = false;
@@ -342,9 +346,6 @@ namespace Z_Mart.UC
             }
             else
                 item.Name = orgName;
-            {
-
-            }
 
             if (!PriceError)
             {
@@ -382,7 +383,7 @@ namespace Z_Mart.UC
             }
             try
             {
-                ItemCRUD.Update(item);
+                ItemCRUD.Update(item, itemToUpdate);
                 ItemCRUD.StoreToFile();
             }
             catch

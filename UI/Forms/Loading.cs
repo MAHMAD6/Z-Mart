@@ -16,15 +16,16 @@ namespace Z_Mart
             this.Opacity = 0;
 
             // Loading & initializing Data for Application
-            Essentials.RequestAdminPermissions();
+ 
             Essentials.InitializeAppDirectories(App.ZMartPath, 
                                                 App.DataPath,
                                                 App.ImagesFolderPath);
-            Essentials.InitializeTxtFiles(App.ItemTxtPath);
+            Essentials.InitializeTxtFiles(App.ItemTxtPath,
+                                          App.AppTxtPath);
             
             Admin admin = new Admin("Ahmad", "fff");
             AdminCRUD.Add(admin);
-
+            
             ItemCRUD.ReadFromFile();
             PersonCRUD.ReadFromFile();
         }

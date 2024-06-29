@@ -183,7 +183,7 @@ namespace Z_Mart
             string Password = tb_EnterPassword.Text;
             if (!string.IsNullOrWhiteSpace(userName) && Regex.IsMatch(userName, @"^[A-Za-z0-9]+$") && userName.Length >= 4 && !string.IsNullOrWhiteSpace(Password))
             {
-                var person = PersonCRUD.findPerson(userName, Password);
+                var person = PersonCRUD.FindPerson(userName, Password);
                 if (person != null && person is Admin)
                 {
                     ActiveAdmin = person.UserName;

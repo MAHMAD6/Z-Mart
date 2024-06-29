@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu.Core, Version=1.11.5.1, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9" />
     <Reference Include="Bunifu.UI.WinForm.BunifuShadowPanel">
@@ -94,14 +97,14 @@
     <Compile Include="BL\Customer.cs" />
     <Compile Include="BL\Item.cs" />
     <Compile Include="BL\Person.cs" />
-    <Compile Include="DL\AdminCRUD.cs" />
+    <Compile Include="DL\CRUD\AdminCRUD.cs" />
     <Compile Include="DL\App.cs" />
     <Compile Include="DL\AppException.cs" />
     <Compile Include="DL\Colores.cs" />
-    <Compile Include="DL\CustomerCRUD.cs" />
+    <Compile Include="DL\CRUD\CustomerCRUD.cs" />
     <Compile Include="DL\Essentials.cs" />
-    <Compile Include="DL\ItemCRUD.cs" />
-    <Compile Include="DL\PersonCRUD.cs" />
+    <Compile Include="DL\CRUD\ItemCRUD.cs" />
+    <Compile Include="DL\CRUD\PersonCRUD.cs" />
     <Compile Include="UI\Forms\Loading.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -375,6 +378,7 @@
     <EmbeddedResource Include="UI\UC\UC_ViewItems.resx">
       <DependentUpon>UC_ViewItems.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

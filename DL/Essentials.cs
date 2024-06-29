@@ -13,21 +13,21 @@ namespace Z_Mart.DL
     {
         public static bool RequestAdminPermissions()
         {
-            
-                try
-                {
-                    ProcessStartInfo startInfo = new ProcessStartInfo();
-                    startInfo.FileName = Application.ExecutablePath;
-                    startInfo.Verb = "runas";
-                    Process.Start(startInfo);
-                    return true; 
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"Error requesting administrator permission: {ex.Message}");
-                    return false;
-                }
-            
+
+            try
+            {
+                ProcessStartInfo startInfo = new ProcessStartInfo();
+                startInfo.FileName = Application.ExecutablePath;
+                startInfo.Verb = "runas";
+                Process.Start(startInfo);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error requesting administrator permission: {ex.Message}");
+                return false;
+            }
+
         }
 
         public static bool InitializeAppDirectories(params string[] paths)
@@ -36,8 +36,8 @@ namespace Z_Mart.DL
             {
                 try
                 {
-                    if(!Directory.Exists(path))
-                    System.IO.Directory.CreateDirectory(path);
+                    if (!Directory.Exists(path))
+                        System.IO.Directory.CreateDirectory(path);
                 }
                 catch (AppException ex)
                 {
@@ -54,7 +54,7 @@ namespace Z_Mart.DL
                 try
                 {
                     if (!File.Exists(path))
-                    File.CreateText(path).Dispose();    
+                        File.CreateText(path).Dispose();
                 }
                 catch (AppException ex)
                 {

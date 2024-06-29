@@ -143,7 +143,7 @@ namespace Z_Mart.UC
             }
             try
             {
-                PersonCRUD.UpdateAdmin(admin);
+                AdminCRUD.UpdateAdmin(admin);
             }
             catch
             {
