@@ -306,7 +306,7 @@ namespace Z_Mart.UC
                 File.Copy(imageLocation, path, true);
                 userEnteredImage = true;
             }
-            img = Image.FromFile(path);
+            img = Essentials.LoadImageWithoutLocking(path);
         }
         Image img;
         public bool YesHide = false;

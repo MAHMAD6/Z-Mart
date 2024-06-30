@@ -33,6 +33,7 @@ namespace Z_Mart.UC
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             this.Visible = false;
+            
         }
     }
 }

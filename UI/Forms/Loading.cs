@@ -20,11 +20,11 @@ namespace Z_Mart
             Essentials.InitializeAppDirectories(App.ZMartPath, 
                                                 App.DataPath,
                                                 App.ImagesFolderPath);
+
             Essentials.InitializeTxtFiles(App.ItemTxtPath,
                                           App.AppTxtPath);
             
-            Admin admin = new Admin("Ahmad", "fff");
-            AdminCRUD.Add(admin);
+       
             
             ItemCRUD.ReadFromFile();
             PersonCRUD.ReadFromFile();

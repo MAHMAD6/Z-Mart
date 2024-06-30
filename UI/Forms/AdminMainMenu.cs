@@ -18,7 +18,6 @@ namespace Z_Mart.Forms
         UC_Home uC_Home1 = new UC_Home();
         AdminProfile adminProfile;
 
-
         public void changeUser(string username, Image img)
         {
             L_CurrentAdmin.Text = username;
@@ -50,8 +49,6 @@ namespace Z_Mart.Forms
         public AdminMainMenu()
         {
             InitializeComponent();
-            Item item = new Item("apple", 88, 785, Z_Mart.Properties.Resources.apple_png);
-            ItemCRUD.Add(item);
             adminProfile = new AdminProfile(this);
             Menus.Add(uC_Home1);
             EnableUserControl(0);

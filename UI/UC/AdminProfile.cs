@@ -54,29 +54,20 @@ namespace Z_Mart.UC
 
         private void Pb_ChangeProfile_Click(object sender, EventArgs e)
         {
-            adminRefresh();
-            OpenFileDialog dialog = new OpenFileDialog();
-            dialog.Filter = "Image files | *.jpg;*.png;";
-            if (dialog.ShowDialog() == DialogResult.OK)
+
+            string currentAdmin = LoginPage.ActiveAdmin;
+            PersonCRUD.updateImage(currentAdmin, null);
+            Image img = Essentials.ImageDialog(currentAdmin);
+            if (img != null)
             {
-                string imageLocation = dialog.FileName;
-                string locationToStoreImage = "C:\\Program files\\Z Mart\\Items_Images";
-                string nameOfImageFile = "Image_Of_" + LoginPage.ActiveAdmin + ".png";
-                if (!Directory.Exists(locationToStoreImage))
-                {
-                    Directory.CreateDirectory(locationToStoreImage);
-                }
-                try
-                {
-                    File.Copy(imageLocation, locationToStoreImage + "\\" + nameOfImageFile, true);
-                }
-                catch { }
-
-
-                pb_profile.ImageLocation = imageLocation;
-                admin.image = Image.FromFile(dialog.FileName);
-                menu.changeUser(admin.UserName, Image.FromFile(dialog.FileName));
+                pb_profile.Image = img;
+                admin.image = img;
+                menu.changeUser(admin.UserName, img);
+                adminRefresh();
+            PersonCRUD.updateImage(currentAdmin, img);
             }
+            PersonCRUD.updateImage(currentAdmin, Z_Mart.Properties.Resources.userProfilHolder_Icon);
+
         }
 
         private void pb_username_Click(object sender, EventArgs e)

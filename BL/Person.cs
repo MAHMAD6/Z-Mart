@@ -13,7 +13,10 @@ namespace Z_Mart.BL
         public string Password { get; set; }
         public Image image { get; set; }
         public bool isExperienced;
-
+        public Person()
+        {
+            image = Z_Mart.Properties.Resources.userProfileHolder_Icon;
+        }
 
     }
 }

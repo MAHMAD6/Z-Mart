@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -11,6 +12,33 @@ namespace Z_Mart.DL
 {
     public class Essentials
     {
+        public static Image LoadImageWithoutLocking(string imagePath)
+        {
+            using (FileStream fs = File.OpenRead(imagePath))
+            {
+                byte[] imageData = new byte[fs.Length];
+                fs.Read(imageData, 0, imageData.Length);
+
+               using (MemoryStream ms = new MemoryStream(imageData))
+                {
+                    return Image.FromStream(ms);
+                }
+            }
+        }
+
+        public static Image ImageDialog(string name)
+        {
+            using (OpenFileDialog dialog = new OpenFileDialog())
+            {
+                dialog.Filter = "Image files | *.jpg;*.png;";
+                if (dialog.ShowDialog() == DialogResult.OK) 
+                {
+                    File.Copy(dialog.FileName, String.Format(App.ImageNameWithPath, name), true);
+                    return LoadImageWithoutLocking(dialog.FileName);
+                }
+            }
+            return null;
+        }
         public static bool RequestAdminPermissions()
         {
 

@@ -473,16 +473,6 @@ namespace Z_Mart.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap App_Icon {
-            get {
-                object obj = ResourceManager.GetObject("App_Icon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap apple_png {
             get {
                 object obj = ResourceManager.GetObject("apple_png", resourceCulture);

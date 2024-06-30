@@ -131,7 +131,7 @@ namespace Z_Mart.UC
                 img = pb_itemImage.Image;
             else
                 img = Z_Mart.Properties.Resources.Package_2d_Icon;
-            if (!NameError && !PriceError && !QuantityError)
+            if (!NameError && !PriceError && !QuantityError )
             {
                 var item = new Item(name, double.Parse(price), double.Parse(quantity), img);
                 if (ItemCRUD.Check(item))

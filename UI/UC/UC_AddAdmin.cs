@@ -79,18 +79,18 @@ namespace Z_Mart.UC
         {
             OpenFileDialog dialog = new OpenFileDialog();
             dialog.Filter = "Image files | *.jpg;*.png;";
-            if (dialog.ShowDialog() == DialogResult.OK)
+            if (dialog.ShowDialog() == DialogResult.OK && !string.IsNullOrEmpty(tb_username.Text))
             {
                 string imageLocation = dialog.FileName;
                 pb_AdminImage.ImageLocation = imageLocation;
-                string locationToStoreImage = "C:\\Program files\\Z Mart";
-                if (!Directory.Exists(locationToStoreImage))
-                {
-                    Directory.CreateDirectory(locationToStoreImage);
-                }
-                string nameOfImageFile = "Image_Of_" + tb_username.Text;
-                File.Copy(imageLocation, locationToStoreImage + "\\" + nameOfImageFile, true);
+                string locationToStoreImage = App.ImagesFolderPath;
+                string nameOfImageFile = "Image_Of_" + tb_username.Text + ".png";
+                File.Copy(imageLocation, locationToStoreImage + "\\" + nameOfImageFile , true);
                 userEnteredImage = true;
+            }
+            else
+            {
+                MessageBox.Show("Enter Username First!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         bool isExperiencedAdmin = false;
