@@ -212,7 +212,6 @@
             this.cbUpdateImage.UseVisualStyleBackColor = true;
             this.cbUpdateImage.Visible = false;
             this.cbUpdateImage.CheckedChanged += new System.EventHandler(this.cbUpdateImage_CheckedChanged);
-            this.cbUpdateImage.Click += new System.EventHandler(this.cbUpdateImage_Click);
             // 
             // cbUpdateQuantity
             // 
@@ -235,7 +234,6 @@
             this.cbUpdateQuantity.UseVisualStyleBackColor = true;
             this.cbUpdateQuantity.Visible = false;
             this.cbUpdateQuantity.CheckedChanged += new System.EventHandler(this.cbUpdateQuantity_CheckedChanged);
-            this.cbUpdateQuantity.Click += new System.EventHandler(this.cbUpdateQuantity_Click);
             // 
             // cbUpdatePrice
             // 
@@ -489,7 +487,6 @@
             this.itemName.TabIndex = 26;
             this.itemName.Text = "Enter Item Name :";
             this.itemName.Visible = false;
-            this.itemName.Click += new System.EventHandler(this.itemName_Click);
             // 
             // UC_UpdateItem
             // 

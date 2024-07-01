@@ -57,7 +57,7 @@ namespace Z_Mart.UC
 
             string currentAdmin = LoginPage.ActiveAdmin;
             PersonCRUD.updateImage(currentAdmin, null);
-            Image img = Essentials.ImageDialog(currentAdmin);
+            Image img = Essentials.ImageDialog(string.Format(App.PersonImageNameWithPath,currentAdmin));
             if (img != null)
             {
                 pb_profile.Image = img;

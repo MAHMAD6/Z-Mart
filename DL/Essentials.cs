@@ -26,14 +26,14 @@ namespace Z_Mart.DL
             }
         }
 
-        public static Image ImageDialog(string name)
+        public static Image ImageDialog(string path)
         {
             using (OpenFileDialog dialog = new OpenFileDialog())
             {
                 dialog.Filter = "Image files | *.jpg;*.png;";
                 if (dialog.ShowDialog() == DialogResult.OK) 
                 {
-                    File.Copy(dialog.FileName, String.Format(App.PersonImageNameWithPath, name), true);
+                    File.Copy(dialog.FileName, path, true);
                     return LoadImageWithoutLocking(dialog.FileName);
                 }
             }

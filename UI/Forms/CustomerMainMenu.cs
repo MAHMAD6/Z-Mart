@@ -11,61 +11,38 @@ namespace Z_Mart.Forms
     public partial class CustomerMainMenu : Form
     {
         public static string ActiveCustomer;
+        public static Image ActiveCustomerImage;
         List<UserControl> Menus = new List<UserControl>();
         UC_Home Home = new UC_Home();
         Uc_ItemSearch searchItem = new Uc_ItemSearch();
+
         UC_ViewItems viewItems = new UC_ViewItems();
         uc_Cart cart = new uc_Cart();
-        public static CustomerProfile customerProfile;
-        private void EnableUserControl(int index)
-        {
-            for (int i = 0; i < Menus.Count; i++)
-            {
-                if (i == index)
-                {
-                    P_ContainMenus.Controls.Add(Menus[i]);
-                    Menus[i].Visible = true;
-                    Menus[i].BringToFront();
-                    Menus[i].Dock = DockStyle.Fill;
-                    Menus[i].Enabled = true;
-                    Menus[i].Show();
-                }
-                else
-                {
 
-                    Menus[i].Hide();
-                    Menus[i].Visible = false;
-                    Menus[i].Enabled = false;
-                }
-            }
-        }
-        public void changeUser(string username, Image img)
-        {
-            ActiveCustomer = username;
-            pictureBox3.Image = img;
-            L_current_user.Text = username;
-        }
+        public static CustomerProfile customerProfile;
+        
         public CustomerMainMenu(string UserName)
         {
             InitializeComponent();
             customerProfile = new CustomerProfile(this);
             ActiveCustomer = UserName;
+            ActiveCustomerImage = PersonCRUD.GetPersonImage(ActiveCustomer);
             Menus.Add(Home);
             EnableUserControl(0);
             Menus.Add(searchItem);
             Menus.Add(viewItems);
             Menus.Add(cart);
             Menus.Add(customerProfile);
-            if (SignUpPage.isSignedUP)
-            {
-                L_current_user.Text = SignUpPage.currentCustomer;
-            }
-            else
-            {
-                L_current_user.Text = LoginPage.CurrentCustomer;
-            }
+            //if (SignUpPage.isSignedUP)
+            //{
+            //    L_current_user.Text = SignUpPage.currentCustomer;
+            //}
+            //else
+            //{
+            //    L_current_user.Text = LoginPage.CurrentCustomer;
+            //}
             L_current_user.Click += pictureBox3_Click;
-            changeUser(LoginPage.CurrentCustomer, LoginPage.CurrentCustomerProfile);
+            changeUser(ActiveCustomer, ActiveCustomerImage);
         }
 
         private void SearchButton_TextChanged(object sender, EventArgs e)
@@ -87,7 +64,6 @@ namespace Z_Mart.Forms
         private void bunifuButton1_Click_1(object sender, EventArgs e)//Home
         {
             EnableUserControl(0);
-            MessageBox.Show(LoginPage.CurrentCustomer);
         }
         private void bunifuButton5_Click_1(object sender, EventArgs e)//Log out
         {
@@ -138,5 +114,34 @@ namespace Z_Mart.Forms
             EnableUserControl(4);
             customerProfile.refresh();
         }
+        private void EnableUserControl(int index)
+        {
+            for (int i = 0; i < Menus.Count; i++)
+            {
+                if (i == index)
+                {
+                    P_ContainMenus.Controls.Add(Menus[i]);
+                    Menus[i].Visible = true;
+                    Menus[i].BringToFront();
+                    Menus[i].Dock = DockStyle.Fill;
+                    Menus[i].Enabled = true;
+                    Menus[i].Show();
+                }
+                else
+                {
+
+                    Menus[i].Hide();
+                    Menus[i].Visible = false;
+                    Menus[i].Enabled = false;
+                }
+            }
+        }
+        public void changeUser(string username, Image img)
+        {
+            ActiveCustomer = username;
+            pictureBox3.Image = img;
+            L_current_user.Text = username;
+        }
+
     }
 }

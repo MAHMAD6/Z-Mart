@@ -81,9 +81,7 @@ namespace Z_Mart.DL
                 string price = match[1].Value;
                 string quantity = match[2].Value;
                 Item item = new Item(name, double.Parse(price), double.Parse(quantity), Z_Mart.Properties.Resources.Package_2d_Icon);
-                Image img = GetItemImage(item.Name);
-                if (img != null)
-                    item.image = img;
+                    item.image = GetItemImage(item.Name);
                 ItemCRUD.Add(item);
             }
             file.Close();
@@ -94,7 +92,7 @@ namespace Z_Mart.DL
             if (File.Exists(path))
                 return Essentials.LoadImageWithoutLocking(path);
             else
-                return null;
+                return Z_Mart.Properties.Resources.Package_2d_Icon;
         }
     }
 }

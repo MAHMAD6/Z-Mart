@@ -104,7 +104,6 @@
             this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.flowLayoutPanel1.Size = new System.Drawing.Size(889, 530);
             this.flowLayoutPanel1.TabIndex = 0;
-            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // UC_ViewItems
             // 

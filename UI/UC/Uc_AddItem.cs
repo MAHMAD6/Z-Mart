@@ -104,20 +104,12 @@ namespace Z_Mart.UC
         bool userEnteredImage = false;
         private void pb_itemImage_Click(object sender, EventArgs e)
         {
-            OpenFileDialog dialog = new OpenFileDialog();
-            dialog.Filter = "Image files | *.jpg;*.png;";
-            if (dialog.ShowDialog() == DialogResult.OK)
+            Image img = Essentials.ImageDialog(string.Format(App.ItemImageNameWithPath, tb_ItemName.Text));
+                if(img != null)
             {
-                string imageLocation = dialog.FileName;
-                pb_itemImage.ImageLocation = imageLocation;
-                string locationToStoreImage = "C:\\Program files\\Z Mart\\Items Images";
-                if (!Directory.Exists(locationToStoreImage))
-                {
-                    Directory.CreateDirectory(locationToStoreImage);
-                }
-                string nameOfImageFile = "Image_Of_" + tb_ItemName.Text + ".png";
-                File.Copy(imageLocation, locationToStoreImage + "\\" + nameOfImageFile, true);
+
                 userEnteredImage = true;
+                pb_itemImage.Image= img;
             }
         }
 

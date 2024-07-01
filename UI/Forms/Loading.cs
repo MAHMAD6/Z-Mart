@@ -19,10 +19,11 @@ namespace Z_Mart
  
             Essentials.InitializeAppDirectories(App.ZMartPath, 
                                                 App.DataPath,
-                                                App.ImagesFolderPath);
+                                                App.PersonImagesFolderPath);
 
             Essentials.InitializeTxtFiles(App.ItemTxtPath,
-                                          App.AppTxtPath);
+                                          App.AppTxtPath,
+                                          App.CustomerTxtPath);
             
        
             

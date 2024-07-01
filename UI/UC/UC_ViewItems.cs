@@ -1,13 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using Z_Mart.BL;
 using Z_Mart.DL;
 
 namespace Z_Mart.UC
@@ -19,10 +11,7 @@ namespace Z_Mart.UC
             InitializeComponent();
         }
 
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+   
         
         public void viewItems(bool admin)
         {
@@ -39,9 +28,6 @@ namespace Z_Mart.UC
             this.Hide();
         }
 
-        private void flowLayoutPanel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+  
     }
 }

@@ -197,6 +197,7 @@
             // 
             // b_SignIn
             // 
+            this.b_SignIn.BorderRadius = 10;
             this.b_SignIn.CheckedState.Parent = this.b_SignIn;
             this.b_SignIn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.b_SignIn.CustomImages.Parent = this.b_SignIn;

@@ -138,6 +138,7 @@
             // 
             // b_SignUp_
             // 
+            this.b_SignUp_.BorderRadius = 10;
             this.b_SignUp_.CheckedState.Parent = this.b_SignUp_;
             this.b_SignUp_.CustomImages.Parent = this.b_SignUp_;
             this.b_SignUp_.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(95)))), ((int)(((byte)(107)))));

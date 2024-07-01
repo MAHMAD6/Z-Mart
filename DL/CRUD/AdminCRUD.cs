@@ -25,12 +25,12 @@ namespace Z_Mart.DL
         {
             foreach (var admin in List)
             {
-                if (admin.UserName == admin.UserName && admin is Admin)
+                if (admin.UserName == adminToUpdate.UserName && admin is Admin)
                 {
-                    admin.Password = admin.Password;
-                    admin.UserName = admin.UserName;
-                    admin.image = admin.image;
-                    admin.isExperienced = admin.isExperienced;
+                    admin.Password = adminToUpdate.Password;
+                    admin.UserName = adminToUpdate.UserName;
+                    admin.image = adminToUpdate.image;
+                    admin.isExperienced = adminToUpdate.isExperienced;
                 }
             }
         }

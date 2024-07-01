@@ -6,7 +6,7 @@ namespace Z_Mart.BL
     internal class Customer : Person
     {
         public List<Item> Cart = new List<Item>();
-        public List<Item> TransactionHistory = new List<Item>();
+
         public void AddToCart(Item item)
         { Cart.Add(item); }
         public void RemoveFromCart(string itemName)

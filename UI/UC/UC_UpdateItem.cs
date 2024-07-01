@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Drawing;
-using System.IO;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using Z_Mart.BL;
@@ -289,26 +288,16 @@ namespace Z_Mart.UC
         bool userEnteredImage = false;
         private void pb_itemImage_Click(object sender, EventArgs e)
         {
-            string path = "";
-            OpenFileDialog dialog = new OpenFileDialog();
-            dialog.Filter = "Image files | *.jpg;*.png;";
-            if (dialog.ShowDialog() == DialogResult.OK)
+            Image img = Essentials.ImageDialog(string.Format(App.ItemImageNameWithPath, tb_ItemName.Text));
+            if (img != null)
             {
-                string imageLocation = dialog.FileName;
-                pb_itemImage.ImageLocation = imageLocation;
-                string locationToStoreImage = "C:\\Program files\\Z Mart";
-                if (!Directory.Exists(locationToStoreImage))
-                {
-                    Directory.CreateDirectory(locationToStoreImage);
-                }
-                string nameOfImageFile = DateTime.Now.ToString("yyyyMMddhhmmss") + "Image_Of_" + tb_ItemName.Text + ".png";
-                path = locationToStoreImage + "\\" + nameOfImageFile;
-                File.Copy(imageLocation, path, true);
+
                 userEnteredImage = true;
+                pb_itemImage.Image = img;
             }
-            img = Essentials.LoadImageWithoutLocking(path);
+            _img = img;
         }
-        Image img;
+        Image _img;
         public bool YesHide = false;
 
 
@@ -319,7 +308,7 @@ namespace Z_Mart.UC
             if (userEnteredImage)
             {
                 if (isCheckedImage)
-                    item.image = img;
+                    item.image = _img;
                 else
                     item.image = orgImg;
                 YesHide = true;
@@ -453,19 +442,6 @@ namespace Z_Mart.UC
             Submit.Visible = false;
         }
 
-        private void cbUpdateQuantity_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cbUpdateImage_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void itemName_Click(object sender, EventArgs e)
-        {
-
-        }
+   
     }
 }

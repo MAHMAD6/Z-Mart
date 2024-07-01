@@ -125,7 +125,7 @@ namespace Z_Mart.DL
             if (File.Exists(path))
                 return Essentials.LoadImageWithoutLocking(path);
             else
-                return null;
+                return Z_Mart.Properties.Resources.userProfilHolder_Icon;
         }
         public static Image GetUserImage(string username)
         {
@@ -136,16 +136,18 @@ namespace Z_Mart.DL
             }
             return null;
         }
-        public static void StoreCustomerItem(Customer customer)
+        public static void UpdateCustomerCartItem(Customer customer)
         {
-            char ch = App.ch;
-            foreach (var item in customer.Cart)
-            {
-                using (StreamWriter file = new StreamWriter(App.CustomerTxtPath))
-                {
-                    file.WriteLine(customer.UserName + ch + item.Name + ch + item.Price + ch + item.Quantity);
-                }
-            }
+
+            /// TODO: the data is not saving safetly for each customer
+            //char ch = App.ch;
+            //foreach (var item in customer.Cart)
+            //{
+            //    using (StreamWriter file = new StreamWriter(App.CustomerTxtPath))
+            //    {
+            //        file.WriteLine(customer.UserName + ch + item.Name + ch + item.Price + ch + item.Quantity);
+            //    }
+            //}
         }
         public static void ReadCustomerItem(Customer customer)
         {
@@ -158,9 +160,7 @@ namespace Z_Mart.DL
                 if (match[0].Value == customer.UserName)
                 {
                     Item item = new Item(match[1].Value, double.Parse(match[2].Value), double.Parse(match[3].Value), Z_Mart.Properties.Resources.Items_Icon);
-                    Image img = ItemCRUD.GetItemImage(item.Name);
-                    if (img != null)
-                        item.image = img;
+                        item.image = ItemCRUD.GetItemImage(item.Name);
                     customer.AddToCart(item);
                 }
             }

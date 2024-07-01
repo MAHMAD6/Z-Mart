@@ -83,7 +83,7 @@ namespace Z_Mart.UC
             {
                 string imageLocation = dialog.FileName;
                 pb_AdminImage.ImageLocation = imageLocation;
-                string locationToStoreImage = App.ImagesFolderPath;
+                string locationToStoreImage = App.PersonImagesFolderPath;
                 string nameOfImageFile = "Image_Of_" + tb_username.Text + ".png";
                 File.Copy(imageLocation, locationToStoreImage + "\\" + nameOfImageFile , true);
                 userEnteredImage = true;

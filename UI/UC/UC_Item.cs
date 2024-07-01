@@ -73,7 +73,7 @@ namespace Z_Mart.UC
             Item item = ItemCRUD.Find(ItemName);
             customer.AddToCart(item);
             item.Quantity = 1;
-            PersonCRUD.StoreCustomerItem(customer);
+            PersonCRUD.UpdateCustomerCartItem(customer);
         }
 
         private void b_removeFromCart_Click(object sender, EventArgs e)
@@ -84,7 +84,7 @@ namespace Z_Mart.UC
             try
             {
                 customer.RemoveFromCart(ItemName);
-                PersonCRUD.StoreCustomerItem(customer);
+                PersonCRUD.UpdateCustomerCartItem(customer);
             }
             catch
             {
