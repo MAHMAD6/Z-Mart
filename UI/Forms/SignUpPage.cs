@@ -101,9 +101,9 @@ namespace Z_Mart
         }
         private void b_SignIn_Click(object sender, EventArgs e)
         {
-            if (IsUserNameValid && isValidPassword)
-            {
                 string username = tb_username.Text;
+            if (IsUserNameValid && isValidPassword && Validation.Password(username))
+            {
                 string password = tb_EnterPassword.Text;
                 bool isPresent = CustomerCRUD.CheckUserName(username);
                 if (!isPresent)

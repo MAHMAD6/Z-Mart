@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Notification));
             this.MessageLineTimer = new System.Windows.Forms.Timer(this.components);
             this.InAnimation = new System.Windows.Forms.Timer(this.components);
             this.border = new System.Windows.Forms.Panel();
@@ -83,22 +84,22 @@
             // L_SubText
             // 
             this.L_SubText.AutoSize = true;
-            this.L_SubText.Font = new System.Drawing.Font("Poppins Light", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.L_SubText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.L_SubText.ForeColor = System.Drawing.Color.White;
             this.L_SubText.Location = new System.Drawing.Point(132, 37);
             this.L_SubText.Name = "L_SubText";
-            this.L_SubText.Size = new System.Drawing.Size(173, 25);
+            this.L_SubText.Size = new System.Drawing.Size(157, 17);
             this.L_SubText.TabIndex = 5;
             this.L_SubText.Text = "File Added Successfully";
             // 
             // MessageMain
             // 
             this.MessageMain.AutoSize = true;
-            this.MessageMain.Font = new System.Drawing.Font("Poppins", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MessageMain.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MessageMain.ForeColor = System.Drawing.Color.White;
             this.MessageMain.Location = new System.Drawing.Point(128, 5);
             this.MessageMain.Name = "MessageMain";
-            this.MessageMain.Size = new System.Drawing.Size(141, 50);
+            this.MessageMain.Size = new System.Drawing.Size(128, 32);
             this.MessageMain.TabIndex = 1;
             this.MessageMain.Text = "Success";
             // 
@@ -115,9 +116,9 @@
             // PB_MessageIcon
             // 
             this.PB_MessageIcon.Image = global::Z_Mart.Properties.Resources.close_icon_White;
-            this.PB_MessageIcon.Location = new System.Drawing.Point(40, 2);
+            this.PB_MessageIcon.Location = new System.Drawing.Point(40, 9);
             this.PB_MessageIcon.Name = "PB_MessageIcon";
-            this.PB_MessageIcon.Size = new System.Drawing.Size(55, 62);
+            this.PB_MessageIcon.Size = new System.Drawing.Size(49, 52);
             this.PB_MessageIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PB_MessageIcon.TabIndex = 0;
             this.PB_MessageIcon.TabStop = false;
@@ -138,6 +139,7 @@
             this.ClientSize = new System.Drawing.Size(450, 80);
             this.Controls.Add(this.border);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Location = new System.Drawing.Point(-1, -1);
             this.Name = "Notification";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;

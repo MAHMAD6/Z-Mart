@@ -33,7 +33,7 @@ namespace Z_Mart.DL
                 dialog.Filter = "Image files | *.jpg;*.png;";
                 if (dialog.ShowDialog() == DialogResult.OK) 
                 {
-                    File.Copy(dialog.FileName, String.Format(App.ImageNameWithPath, name), true);
+                    File.Copy(dialog.FileName, String.Format(App.PersonImageNameWithPath, name), true);
                     return LoadImageWithoutLocking(dialog.FileName);
                 }
             }

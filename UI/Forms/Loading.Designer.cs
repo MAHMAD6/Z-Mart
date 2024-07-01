@@ -107,11 +107,11 @@
             // 
             this.LoadingPercentage.AutoSize = true;
             this.LoadingPercentage.BackColor = System.Drawing.Color.Transparent;
-            this.LoadingPercentage.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LoadingPercentage.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoadingPercentage.ForeColor = System.Drawing.Color.Gold;
             this.LoadingPercentage.Location = new System.Drawing.Point(514, 333);
             this.LoadingPercentage.Name = "LoadingPercentage";
-            this.LoadingPercentage.Size = new System.Drawing.Size(0, 23);
+            this.LoadingPercentage.Size = new System.Drawing.Size(0, 16);
             this.LoadingPercentage.TabIndex = 2;
             this.LoadingPercentage.UseWaitCursor = true;
             // 
@@ -135,6 +135,7 @@
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Loading";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Z Mart";

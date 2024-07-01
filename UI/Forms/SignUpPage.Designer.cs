@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignUpPage));
             this.panel2 = new System.Windows.Forms.Panel();
             this.L_InvalidPassword = new System.Windows.Forms.Label();
             this.L_InvalidUserName = new System.Windows.Forms.Label();
@@ -113,7 +114,7 @@
             this.b_SignIN.Cursor = System.Windows.Forms.Cursors.Hand;
             this.b_SignIN.CustomImages.Parent = this.b_SignIN;
             this.b_SignIN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(37)))), ((int)(((byte)(55)))));
-            this.b_SignIN.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Bold);
+            this.b_SignIN.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
             this.b_SignIN.ForeColor = System.Drawing.Color.LimeGreen;
             this.b_SignIN.HoverState.Parent = this.b_SignIN;
             this.b_SignIN.Location = new System.Drawing.Point(114, 719);
@@ -140,7 +141,7 @@
             this.b_SignUp_.CheckedState.Parent = this.b_SignUp_;
             this.b_SignUp_.CustomImages.Parent = this.b_SignUp_;
             this.b_SignUp_.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(95)))), ((int)(((byte)(107)))));
-            this.b_SignUp_.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Bold);
+            this.b_SignUp_.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
             this.b_SignUp_.ForeColor = System.Drawing.Color.White;
             this.b_SignUp_.HoverState.Parent = this.b_SignUp_;
             this.b_SignUp_.Location = new System.Drawing.Point(100, 591);
@@ -174,11 +175,11 @@
             this.tb_EnterPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(37)))), ((int)(((byte)(55)))));
             this.tb_EnterPassword.BorderColor = System.Drawing.Color.SeaGreen;
             this.tb_EnterPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tb_EnterPassword.Font = new System.Drawing.Font("Poppins Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_EnterPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_EnterPassword.ForeColor = System.Drawing.Color.White;
             this.tb_EnterPassword.Location = new System.Drawing.Point(91, 492);
             this.tb_EnterPassword.Name = "tb_EnterPassword";
-            this.tb_EnterPassword.Size = new System.Drawing.Size(280, 30);
+            this.tb_EnterPassword.Size = new System.Drawing.Size(280, 23);
             this.tb_EnterPassword.TabIndex = 8;
             this.tb_EnterPassword.TabStop = false;
             this.tb_EnterPassword.Text = "   Enter Password";
@@ -218,11 +219,11 @@
             this.tb_username.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(37)))), ((int)(((byte)(55)))));
             this.tb_username.BorderColor = System.Drawing.Color.SeaGreen;
             this.tb_username.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tb_username.Font = new System.Drawing.Font("Poppins Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_username.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_username.ForeColor = System.Drawing.Color.White;
             this.tb_username.Location = new System.Drawing.Point(92, 362);
             this.tb_username.Name = "tb_username";
-            this.tb_username.Size = new System.Drawing.Size(280, 30);
+            this.tb_username.Size = new System.Drawing.Size(280, 23);
             this.tb_username.TabIndex = 4;
             this.tb_username.TabStop = false;
             this.tb_username.Text = "   Enter UserName";
@@ -300,6 +301,7 @@
             this.ClientSize = new System.Drawing.Size(441, 842);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SignUpPage";
             this.Padding = new System.Windows.Forms.Padding(4);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -99,6 +99,9 @@ namespace Z_Mart.DL
                     else
                         isExperienced = !true;
                 }
+
+
+
                 if (match[2].Value == "Customer")
                 {
                     Customer customer = new Customer(username, password);
@@ -118,7 +121,7 @@ namespace Z_Mart.DL
         }
         public static Image GetPersonImage(string name)
         {
-            string path = string.Format(App.ImageNameWithPath, name);
+            string path = string.Format(App.PersonImageNameWithPath, name);
             if (File.Exists(path))
                 return Essentials.LoadImageWithoutLocking(path);
             else
@@ -146,7 +149,7 @@ namespace Z_Mart.DL
         }
         public static void ReadCustomerItem(Customer customer)
         {
-            string[] itemImages = Directory.GetFiles(App.ImagesFolderPath);
+           
             StreamReader file = new StreamReader(App.CustomerTxtPath);
             string record = string.Empty;
             while ((record = file.ReadLine()) != null)
@@ -155,13 +158,9 @@ namespace Z_Mart.DL
                 if (match[0].Value == customer.UserName)
                 {
                     Item item = new Item(match[1].Value, double.Parse(match[2].Value), double.Parse(match[3].Value), Z_Mart.Properties.Resources.Items_Icon);
-                    foreach (string filePath in itemImages)
-                    {
-                        if (string.Equals(Path.GetFileName(filePath), "Image_Of_" + match[1].Value + ".png", StringComparison.OrdinalIgnoreCase))
-                        {
-                            item.image = Essentials.LoadImageWithoutLocking(filePath);
-                        }
-                    }
+                    Image img = ItemCRUD.GetItemImage(item.Name);
+                    if (img != null)
+                        item.image = img;
                     customer.AddToCart(item);
                 }
             }

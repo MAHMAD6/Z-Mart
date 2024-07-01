@@ -30,8 +30,6 @@ namespace Z_Mart
             L_InvalidPassword.Visible = false;
             tb_EnterPassword.GotFocus += tb_EnterPassword_Focus;
             tb_username.GotFocus += tb_username_Focus;
-            var item = new Item("Mango", 788, 78, Z_Mart.Properties.Resources.Package_2d_Icon);
-            ItemCRUD.Add(item);
             CurrentCustomerProfile = PersonCRUD.GetUserImage(CurrentCustomer);
             changeMonkey(234567);
         }

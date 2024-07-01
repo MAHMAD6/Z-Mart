@@ -60,11 +60,8 @@ namespace Z_Mart.DL
         // File handling
         public static void StoreToFile()
         {
-            string path = App.ItemTxtPath;
             char ch = App.ch;
-            StreamWriter writer = System.IO.File.CreateText(path);
-            writer.Close();
-            StreamWriter file = new StreamWriter(path, true);
+            StreamWriter file = new StreamWriter(App.ItemTxtPath);
             foreach (var item in ItemList)
             {
                 file.WriteLine(item.Name + ch + item.Price + ch + item.Quantity);
@@ -74,10 +71,8 @@ namespace Z_Mart.DL
         }
         public static void ReadFromFile()
         {
-            string path = App.ItemTxtPath;
-            string[] filesInDirectory = Directory.GetFiles(App.ImagesFolderPath);
-
-            StreamReader file = new StreamReader(path);
+   
+            StreamReader file = new StreamReader(App.ItemTxtPath);
             string record = string.Empty;
             while ((record = file.ReadLine()) != null)
             {
@@ -86,17 +81,20 @@ namespace Z_Mart.DL
                 string price = match[1].Value;
                 string quantity = match[2].Value;
                 Item item = new Item(name, double.Parse(price), double.Parse(quantity), Z_Mart.Properties.Resources.Package_2d_Icon);
-                foreach (string filePath in filesInDirectory)
-                {
-                    if (string.Equals(Path.GetFileName(filePath), "Image_Of_" + item.Name + ".png", StringComparison.OrdinalIgnoreCase))
-                    {
-                        item.image = Image.FromFile(filePath);
-                        break;
-                    }
-                }
+                Image img = GetItemImage(item.Name);
+                if (img != null)
+                    item.image = img;
                 ItemCRUD.Add(item);
             }
             file.Close();
+        }
+        public static Image GetItemImage(string name)
+        {
+            string path = string.Format(App.ItemImageNameWithPath, name);
+            if (File.Exists(path))
+                return Essentials.LoadImageWithoutLocking(path);
+            else
+                return null;
         }
     }
 }

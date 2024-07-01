@@ -108,6 +108,7 @@
     <Compile Include="DL\Essentials.cs" />
     <Compile Include="DL\CRUD\ItemCRUD.cs" />
     <Compile Include="DL\CRUD\PersonCRUD.cs" />
+    <Compile Include="DL\Validation.cs" />
     <Compile Include="UI\Forms\Loading.cs">
       <SubType>Form</SubType>
     </Compile>
