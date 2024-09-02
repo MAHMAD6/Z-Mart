@@ -142,7 +142,7 @@ namespace Z_Mart.UC
                     tb_ItemName.Text = "Enter Item Name";
                     tb_ItemPrice.Text = "Enter Item Price";
                     tb_itemQuantity.Text = "Enter Item Quantity";
-                    pb_itemImage.Image = Z_Mart.Properties.Resources.AddPhoto_Icon;
+                    pb_itemImage.Image = Z_Mart.Properties.Resources.AddPhoto_Icon_white;
                     L_InvalidItemName.Visible = false;
                     L_InvalidItemPrice.Visible = false;
                     L_InvalidItemQuantity.Visible = false;
